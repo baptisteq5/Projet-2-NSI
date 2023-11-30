@@ -1,1 +1,20 @@
-def librairie :
+fonction (paramètre: thune_à_rendre):
+mettre thune à thune_a_rendre
+
+liste des billets/pièces existants = liste_thunes
+
+trier liste_thunes existants par décroissant
+
+mettre cible à plus haut de liste_thunes
+
+mettre thunes_a_rendre à vide
+
+jusqu'à ce que thune = 0:
+    si cible < thune:
+        thune = thune - cible
+        ajouter cible à thunes_a_rendre
+    sinon:
+        enlever {cible} de liste_thunes
+        mettre cible à plus haut de liste_thunes
+
+afficher thunes_a_rendre correctement
