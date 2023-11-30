@@ -1,20 +1,17 @@
-fonction (paramètre: thune_à_rendre):
-mettre thune à thune_a_rendre
-
-liste des billets/pièces existants = liste_thunes
-
-trier liste_thunes existants par décroissant
-
-mettre cible à plus haut de liste_thunes
-
-mettre thunes_a_rendre à vide
-
-jusqu'à ce que thune = 0:
-    si cible < thune:
-        thune = thune - cible
-        ajouter cible à thunes_a_rendre
-    sinon:
-        enlever {cible} de liste_thunes
-        mettre cible à plus haut de liste_thunes
-
-afficher thunes_a_rendre correctement
+FONCTION monnaie_à_rendre_à_la_librairie(monnaie_a_rendre : int):
+    
+    liste_monnaie <- [500, 200, 100, 50, 20, 10, 5, 2, 1]
+    
+    billets <- []
+    euro = liste_monnaie[0]
+    
+    TANT_QUE monnaie_a_rendre > 0 :
+        SI euro < monnaie_a_rendre:
+            AJOUTER euro A billets
+            monnaie_a_rendre <- monnaie_a_rendre - euro
+        SINON:
+            ENLEVER euro DE liste_monnaie
+            euro <- liste_monnaie[0]
+    FIN TANT_QUE
+    
+    AFFICHER billets
