@@ -1,9 +1,9 @@
 FONCTION monnaie_à_rendre_à_la_librairie(monnaie_a_rendre : int):
     
-    liste_monnaie <- [500, 200, 100, 50, 20, 10, 5, 2, 1]
+    liste_monnaie <- [1, 2, 5, 10, 20, 50, 100, 200, 500]
     
     billets <- []
-    euro = liste_monnaie[0]
+    euro = liste_monnaie[len(liste_monnaie - 1)]
     
     TANT_QUE monnaie_a_rendre > 0 :
         SI euro < monnaie_a_rendre:
@@ -11,7 +11,7 @@ FONCTION monnaie_à_rendre_à_la_librairie(monnaie_a_rendre : int):
             monnaie_a_rendre <- monnaie_a_rendre - euro
         SINON:
             ENLEVER euro DE liste_monnaie
-            euro <- liste_monnaie[0]
+            euro <- liste_monnaie[len(liste_monnaie - 1)]
     FIN TANT_QUE
     
     AFFICHER billets
