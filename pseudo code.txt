@@ -11,7 +11,7 @@ FONCTION monnaie_à_rendre_à_la_librairie(monnaie_a_rendre : int):
             monnaie_a_rendre <- monnaie_a_rendre - euro
         SINON:
             ENLEVER euro DE liste_monnaie
-            euro <- liste_monnaie[len(liste_monnaie - 1)]
+            euro <- liste_monnaie[len(liste_monnaie) - 1]
     FIN TANT_QUE
     
     AFFICHER billets
