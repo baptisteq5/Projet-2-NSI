@@ -6,7 +6,7 @@ FONCTION monnaie_à_rendre_à_la_librairie(monnaie_a_rendre : int):
     euro = liste_monnaie[len(liste_monnaie) - 1]
     
     TANT_QUE monnaie_a_rendre > 0 :
-        SI euro < monnaie_a_rendre:
+        SI euro <= monnaie_a_rendre:
             AJOUTER euro A billets
             monnaie_a_rendre <- monnaie_a_rendre - euro
         SINON:
