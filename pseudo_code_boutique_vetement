@@ -1,2 +1,11 @@
-def boutique_vetement():
-  
+FONCTION boutique_vetement(monnaie_a_rendre : INT):
+    liste_monnaie <= [200, 100, 100, 100, 50, 20, 10, 5, 2, 2, 2, 2, 2]
+    billets <= []
+    TANT_QUE monnaie_a_rendre > 0 ET longueur de liste_monnaie > 0:
+        euro <= liste_monnaie[0]
+        SI euro <= monnaie_a_rendre:
+            AJOUTER euro A billets
+            ENLEVER euro A monnaie_a_rendre
+        SUPPRIMER liste[0]
+    FIN TANT_QUE
+    
