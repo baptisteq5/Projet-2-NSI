@@ -6,6 +6,7 @@ FONCTION boutique_vetement(monnaie_a_rendre : INT):
         SI monnaie_a_rendre == 1:
             AJOUTER dernier de liste_monnaie A billets
             RETIRER dernier de liste_monnaie DE liste_monnaie
+            ENLEVER dernier de liste_monnaie A monnaie_a_rendre
         SINON SI monnaie_a_rendre <=10 ET monnaie_a_rendre % 2 == 0 ET euro <10 ET euro == 5:
             PASSER
         SINON SI euro <= monnaie_a_rendre:
