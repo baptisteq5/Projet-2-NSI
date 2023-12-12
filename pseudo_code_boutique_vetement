@@ -3,10 +3,12 @@ FONCTION boutique_vetement(monnaie_a_rendre : INT):
     billets <= []
     TANT_QUE monnaie_a_rendre > 0 ET longueur de liste_monnaie > 0:
         euro <= liste_monnaie[0]
-        SI monnaie_a_rendre = 1:
+        SI monnaie_a_rendre == 1:
             AJOUTER dernier de liste_monnaie A billets
             RETIRER dernier de liste_monnaie DE liste_monnaie
-        SI euro <= monnaie_a_rendre:
+        SINON SI monnaie_a_rendre <=10 ET monnaie_a_rendre % 2 == 0 ET euro <10 ET euro == 5:
+            PASSER
+        SINON SI euro <= monnaie_a_rendre:
             AJOUTER euro A billets
             ENLEVER euro A monnaie_a_rendre
         SUPPRIMER liste[0]
