@@ -11,10 +11,10 @@ DEFINIR fonction baguette(gallions, mornilles, noises):
   a_rendre   <--- {gallions: 0, mornilles: 0, noises: 0}
   TANT_QUE tot_noises >= 493:                                # convertit autant que possible en gallions
     AJOUTER 1 A a_rendre[gallions]
-    RETRANCHER 493 A tot_noises
+    SOUSTRAIRE 493 A tot_noises
   TANT_QUE tot_noises >= 29:                                 # convertit autant que possible en mornilles
     AJOUTER 1 A a_rendre[mornilles]
-    RETRANCHER 29 A tot_noises
+    SOUSTRAIRE 29 A tot_noises
   AJOUTER tot_mornilles A a_rendre[noises]                   # met tout ce qui n'a pas pu être convertit dans la clé noises
   RENVOYER a_rendre                                          # renvoie un dictionnaire contenant la somme rendue en gallions, mornilles, et en noises
   
