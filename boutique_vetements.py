@@ -1,4 +1,4 @@
-def boutique_vetements(monnaie_a_rendre):
+def monnaie_vetements(monnaie_a_rendre):
     liste_monnaie = [200, 100, 100, 100, 50, 20, 10, 5, 2, 2, 2, 2, 2]
     billets = []
     while monnaie_a_rendre > 0 and liste_monnaie:
