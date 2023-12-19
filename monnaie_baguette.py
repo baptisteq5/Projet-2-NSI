@@ -5,7 +5,7 @@ Infos:
 '''
 
 
-def baguette(gallions: int, mornilles: int, noises: int):
+def monnaie_baguette(gallions: int, mornilles: int, noises: int):
     '''
     Paramètres
     ----------
