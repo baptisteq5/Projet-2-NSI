@@ -49,18 +49,18 @@ def librairie():
     sommes_preenregistrees = [0, 60, 63, 231, 899]
     rester = True
     while rester:
-        type_rendu = input('voulez vous: \
+        type_rendu = input('Voulez vous: \
                            \n1: choisir la somme à rendre\
                            \n2: exécuter avec les sommes préenregistrées\
                            \nToute autre réponse sort de la boutique: ')
         if type_rendu == '1':
-            monnaie_a_rendre = int(input('saisissez la somme à rendre: '))
+            monnaie_a_rendre = int(input('Saisissez la somme à rendre: '))
             resultat = monnaie_librairie(monnaie_a_rendre)
-            print(f'pour la somme {monnaie_a_rendre}, le libraire vous rend ces espèces: {resultat}')
+            print(f'Pour la somme {monnaie_a_rendre}, le libraire vous rend ces espèces: {resultat}')
         elif type_rendu == '2':
             for somme in sommes_preenregistrees:
                 resultat = monnaie_librairie(somme)
-                print(f'pour la somme {somme}, le libraire vous rend ces espèces: {resultat}')
+                print(f'Pour la somme {somme}, le libraire vous rend ces espèces: {resultat}')
         else:
             rester = False
     print('Vous êtes sorti de la librarie! Au revoir!')
@@ -70,14 +70,14 @@ def vetements():
     sommes_preenregistrees = [0, 17, 68, 231, 497, 842]
     rester = True
     while rester:
-        type_rendu = input('voulez vous: \
+        type_rendu = input('Voulez vous: \
                            \n1: choisir la somme à rendre\
                            \n2: exécuter avec les sommes préenregistrées\
                            \nToute autre réponse sort de la boutique: ')
         if type_rendu == '1':
-            monnaie_a_rendre = int(input('saisissez la somme à rendre: '))
+            monnaie_a_rendre = int(input('Saisissez la somme à rendre: '))
             resultat = monnaie_vetements(monnaie_a_rendre)
-            print(f'pour la somme {monnaie_a_rendre}, Mme Guipure vous rend ces espèces: {resultat[0]}')
+            print(f'Pour la somme {monnaie_a_rendre}, Mme Guipure vous rend ces espèces: {resultat[0]}')
             if resultat[1] > 0:
                 print(f"Madame Guipure n'a pas réussi à vous rendre la somme exacte alors elle vouds a rendu {resultat[1]} en trop!")
             if resultat[1] < 0:
@@ -85,7 +85,7 @@ def vetements():
         elif type_rendu == '2':
             for somme in sommes_preenregistrees:
                 resultat = monnaie_vetements(somme)
-                print(f'pour la somme {somme}, Mme Guipure vous rend ces espèces: {resultat[0]}')
+                print(f'Pour la somme {somme}, Mme Guipure vous rend ces espèces: {resultat[0]}')
                 if resultat[1] > 0:
                     print(f"Madame Guipure n'a pas réussi à vous rendre la somme exacte alors elle vouds a rendu {resultat[1]} en trop!")
                 if resultat[1] < 0:
@@ -99,21 +99,21 @@ def baguettes():
     sommes_preenregistrees = [(0, 0, 0), (0, 0, 654), (0, 23, 78), (2, 11, 9), (7, 531, 451)]
     rester = True
     while rester:
-        type_rendu = input('voulez vous: \
+        type_rendu = input('Voulez vous: \
                            \n1: choisir la somme à rendre\
                            \n2: exécuter avec les sommes préenregistrées\
                            \nToute autre réponse sort de la boutique: ')
         if type_rendu == '1':
-            gallions_a_rendre = int(input('saisissez le nombre de gallions à rendre: '))
-            mornilles_a_rendre = int(input('saisissez le nombre de mornilles à rendre: '))
-            noises_a_rendre = int(input('saisissez le nombre de noises à rendre: '))
+            gallions_a_rendre = int(input('Saisissez le nombre de gallions à rendre: '))
+            mornilles_a_rendre = int(input('Saisissez le nombre de mornilles à rendre: '))
+            noises_a_rendre = int(input('Saisissez le nombre de noises à rendre: '))
             monnaie_a_rendre = (gallions_a_rendre, mornilles_a_rendre, noises_a_rendre)
             resultat = monnaie_baguette(monnaie_a_rendre[0], monnaie_a_rendre[1], monnaie_a_rendre[2])
-            print(f'pour la somme {monnaie_a_rendre}, le baguettier vous rend ces espèces: {resultat}')
+            print(f'Pour la somme {monnaie_a_rendre}, le baguettier vous rend ces espèces: {resultat}')
         elif type_rendu == '2':
             for somme in sommes_preenregistrees:
                 resultat = monnaie_baguette(somme[0], somme[1], somme[2])
-                print(f'pour la somme {somme}, le baguettier vous rend ces espèces: {resultat}')
+                print(f'Pour la somme {somme}, le baguettier vous rend ces espèces: {resultat}')
         else:
             rester = False
     print('Vous êtes sorti de la boutique de baguettes! Au revoir!')
