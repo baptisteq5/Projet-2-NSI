@@ -39,6 +39,31 @@ def monnaie_baguette(gallions: int, mornilles: int, noises: int):
     a_rendre['noises'] += total_noises
     return a_rendre
 
+
+
+
+
+def ihm():
+    print('Bienvenue sur le chemin de traverse! ')
+    rester = True
+    
+    while rester:
+        boutique = input('Dans quelle boutique voulez-vous aller? \
+                         \n1: Librairie de Fleury & Bott\
+                         \n2: Prêt à porter de Madame Guipure\
+                         \n3: Ollivander fabriquant de baguettes\
+                         \nToute autre réponse quitte le chemin de traverse: ')
+        if boutique == '1':
+            librairie()
+        elif boutique == '2':
+            vetements()
+        elif boutique == '3':
+            baguettes()
+        else:
+            rester = False
+    print('Vous avez quitté le chemin de traverse! A une prochaine fois!')
+
+
 def librairie():
     print('Bienvenue chez Fleury & Bott, libraire!')
     sommes_preenregistrees = [0, 60, 63, 231, 899]
@@ -59,6 +84,7 @@ def librairie():
         else:
             rester = False
     print('Vous êtes sorti de la librarie! Au revoir!')
+
             
 def vetements():
     print('Bienvenue chez Mme Guipure, boutique de prêt-à-porter!')
@@ -89,6 +115,7 @@ def vetements():
             rester = False
     print('Vous êtes sorti de la boutique de prêt-à-porter! Au revoir!')
                 
+
 def baguettes():
     print('Bienvenue chez Ollivander, fabriquant de baguettes magiques!')
     sommes_preenregistrees = [(0, 0, 0), (0, 0, 654), (0, 23, 78), (2, 11, 9), (7, 531, 451)]
@@ -114,25 +141,5 @@ def baguettes():
     print('Vous êtes sorti de la boutique de baguettes! Au revoir!')
 
 
-
-def ihm():
-    print('Bienvenue sur le chemin de traverse! ')
-    rester = True
-    
-    while rester:
-        boutique = input('Dans quelle boutique voulez-vous aller? \
-                         \n1: Librairie de Fleury & Bott\
-                         \n2: Prêt à porter de Madame Guipure\
-                         \n3: Ollivander fabriquant de baguettes\
-                         \nToute autre réponse quitte le chemin de traverse: ')
-        if boutique == '1':
-            librairie()
-        elif boutique == '2':
-            vetements()
-        elif boutique == '3':
-            baguettes()
-        else:
-            rester = False
-    print('Vous avez quitté le chemin de traverse! A une prochaine fois!')
-            
+ 
 ihm()
