@@ -16,13 +16,8 @@ def monnaie_vetements(monnaie_a_rendre):
     billets = []
     while monnaie_a_rendre > 0 and liste_monnaie:
         euro = liste_monnaie[0]
-        if monnaie_a_rendre == 1:
-            billets.append(liste_monnaie[len(liste_monnaie) - 1])
-            monnaie_a_rendre -= liste_monnaie[len(liste_monnaie) - 1]
-            liste_monnaie.pop
-        elif monnaie_a_rendre <= 10 and monnaie_a_rendre % 2 == 0 and euro <10 and euro == 5:
-            pass
-        elif euro <= monnaie_a_rendre:
+        reste = sum(liste_monnaie) - euro
+        if euro <= monnaie_a_rendre or reste < monnaie_a_rendre:
             billets.append(euro)
             monnaie_a_rendre -= euro
         del liste_monnaie[0]
