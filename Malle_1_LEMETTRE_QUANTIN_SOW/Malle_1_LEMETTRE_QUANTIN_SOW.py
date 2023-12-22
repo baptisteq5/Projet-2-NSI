@@ -1,3 +1,17 @@
+# coding : utf-8
+'''
+Auteurs : Aydan LEMETTRE
+          Baptiste QUANTIN
+          Mohamed SOW
+Licence : Creative commons  CC BY-NC-SA
+Version : Finale
+Lien vers le github : https://github.com/baptisteq5/Projet-2-NSI
+
+Ce programme a été crée pour le projet Harry Potter du cours de NSI 1ère de M.Landry
+Ce programme permet de rendre la monnaie à Harry Potter qui vient faire ses achats sur le chemin de Traverse 
+chez plusieurs commerçants.
+'''
+
 def monnaie_librairie(monnaie_a_rendre):
     liste_monnaie = [1, 2, 5, 10, 20, 50, 100, 200, 500]
     billets = []
