@@ -74,7 +74,7 @@ def vetements():
             resultat = monnaie_vetements(monnaie_a_rendre)
             print(f'Pour la somme {monnaie_a_rendre}, Mme Guipure vous rend ces espèces: {resultat[0]}')
             if resultat[1] > 0:
-                print(f"Madame Guipure n'a pas réussi à vous rendre la somme exacte alors elle vouds a rendu {resultat[1]} en trop!")
+                print(f"Madame Guipure n'a pas réussi à vous rendre la somme exacte alors elle vous a rendu {resultat[1]} en trop!")
             if resultat[1] < 0:
                 print(f"Madame Guipure n'a pas réussi à tout vous rendre, il manque {resultat[1]}!")
         elif type_rendu == '2':
@@ -82,7 +82,7 @@ def vetements():
                 resultat = monnaie_vetements(somme)
                 print(f'Pour la somme {somme}, Mme Guipure vous rend ces espèces: {resultat[0]}')
                 if resultat[1] > 0:
-                    print(f"Madame Guipure n'a pas réussi à vous rendre la somme exacte alors elle vouds a rendu {resultat[1]} en trop!")
+                    print(f"Madame Guipure n'a pas réussi à vous rendre la somme exacte alors elle vous a rendu {resultat[1]} en trop!")
                 if resultat[1] < 0:
                     print(f"Madame Guipure n'a pas réussi à tout vous rendre, il manque {resultat[1]}!")
         else:
